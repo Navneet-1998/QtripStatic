@@ -20,16 +20,15 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-<nav class="navbar navbar-expand-lg bg-light">
-<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">QTrip</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse position-relative" id="navbarNav">
-    <ul class="navbar-nav position-absolute top-0 end-0">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav d-flex  justify-content-end w-100">
+      <li class="nav-item active">
         <a class="nav-link" aria-current="page" href="#">Home</a>
       </li>
       <li class="nav-item">
@@ -37,22 +36,21 @@
       </li>
     </ul>
   </div>
-</div>
 </nav>
+
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex flex-column  justify-content-center align-items-center">
-     <h1 class="p-1">Welcome To QTrip</h1>
-     <h2 class="hero-subheading p-1">Explore the world woth fantastic to venture around</h2>
-    <form class="col-6 p-1 " role="search">
-      <input class="form-control hero-input " type="search" placeholder="Search a City" aria-label="Search">
-    </form>
+   <div class="hero-image d-flex flex-column justify-content-center align-items-center text-white flex-column text-center">
+    <div class="container">
+    <h1>Welcome To QTrip</h1>
+     <p class="hero-subheading">Explore the world woth fantastic to venture around</p>
+      <input class="hero-input " type="search" placeholder="Search a City" aria-label="Search">
    </div> 
-
+</div>
 
   <div class="container">
         <div class="row mt-4">
