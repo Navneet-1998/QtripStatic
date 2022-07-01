@@ -12,15 +12,87 @@
 <body>
    <!-- TODO: MODULE_ADVENTURE_DETAILS -->
    <!-- 1. Copy navigation bar HTML from Landing page document -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#">QTrip</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse m-3" id="navbarNav">
+            <ul class="navbar-nav d-flex  justify-content-end w-100 ">
+               <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Explore</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
 
-   <div class="container">
-      <div class="content">
-          <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
-          <!-- 1. Write the child elements as required. -->
-          <!-- 2. Remember to use .adventure-card and its related classes. -->
-
+<div class="row">
+   <div class="col-lg-8">
+      <div class="adventure-detail-card mb-3">
+         <div class="row">
+            <div class="col-lg-8">
+               <img class="adventure-card-image" src="/js19920722-ME_QTRIPSTATIC/assets/adventures/resort/resort1.jpg" />
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+               <div>
+                  <img class="adventure-card-image pb-3" src="/js19920722-ME_QTRIPSTATIC/assets/adventures/resort/resort2.jpg" />
+               </div>
+               <div>
+                  <img class="adventure-card-image" src="/js19920722-ME_QTRIPSTATIC/assets/adventures/resort/resort3.jpg" />
+               </div>
+            </div>
+         </div>
+        <h2>Sunshine Resort</h2>
+        <p style="opacity: 0.5; font-size: 23px;">Relax and unwind yourself</p>
+        <hr style="opacity: 0.3;">
+        <h4>About the Experience</h4>
+        <p>Chaireman's Jade Resort is constructed in the most natural setting foe a day out that pleases the senses. The property is spread over eight acres of land with facilities for both indoor and outdoor adventures. Get active in the pool woth game of water polo or try some archery.For the indoor sort, there are a host of popular gaes and adventures. If that us noit enticing enough head to the gymnasium!</p>
+        <div class="d-none d-lg-block">
+        Inclusions
+        <ul>
+           <li>Swimming pool access</li>
+           <li>Outdoor sport - Water Polo, Archery, Tennis and Zorbing</li>
+           <li>Indoor games - Indoor Squash, Table Tennis, Carrom, Badminton, Chess, Billiard and X-Box 360 KINECT</li>
+           <li>Parking</li>
+        </ul>
+        Know before you go 
+        <ul>
+           <li>Game accessories like balls and shuttlecocks will need to be purchased</li>
+           <li>All adventures and game accessories are subject to availability</li>
+           <li>Nylon swimwear must be worn at all times when using the swimming pool</li>
+           <li>Children must be accompanied by parents or gurdians at all times</li>
+           <li>Complimentory entry for children below the height of three feet. A vail photo ID is mandatory to enter the resort</li>
+        </ul>
+        Not included
+        <ul>
+           <li>Swimwear</li>
+           <li>Pickup and dorp</li>
+           <li>towel</li>
+        </ul>
+      </div>
       </div>
    </div>
+   <div class="adventure-detail d-none d-xl-block " style="position: fixed; left:1000px; " id="reservation">
+      <h3>Sold Out!</h3>
+      <hr>
+      <div ">This adventure is currently sold out. But there's a lot more to </div><a href=" ../"
+         style="color:orange !important">explore.</a>
+   
+      </div>
+
+   <div class="adventure-detail m-3 d-lg-block d-xl-none" style="position: relative; " id="reservation">
+      <h3  >Sold Out!</h3>
+      <hr ><div  ">This adventure is currently sold out. But there's a lot more to </div><a href="../"
+         style="color:orange !important">explore.</a>
+   
+   </div>
+</div>
    <footer>
       <div class="container">© QTrip 2020</div>
    </footer>
