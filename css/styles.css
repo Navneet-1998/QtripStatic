@@ -119,7 +119,7 @@ border-radius: 8px;
 /* Adventures grid page CSS */
 /* ================================== */
 
-.adventure-card {
+/* .adventure-card {
   height: 20rem;
   border-radius: 8px;
 
@@ -134,51 +134,116 @@ border-radius: 8px;
 
 .adventure-card img:hover {
   filter: brightness(50%);
-}
+} */
 
+
+.adventure-card {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  cursor: pointer;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.adventure-card img {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+}
+.adventure-card img:hover {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  cursor: pointer;
+  filter: brightness(50%);
+}
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
 
 
+
+ 
 .adventure-detail-card {
-  border: 1px solid #eee;
-  border-radius: 4px;
-  padding: 16px;
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+  width: 400px;
+}
+
+.adventure-detail-card h5 {
+  text-align: left;
 }
 
 .adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+  display: block;
+  height: auto;
   width: 100%;
-  height: 100%;
-}
+  opacity: 100%;
 
+  -webkit-transition: 0.2s all; /* Safari and Chrome */
+  -moz-transition: 0.2s all; /* Firefox */
+  -ms-transition: 0.2s all; /* IE 9 */
+  -o-transition: 0.2s all; /* Opera */
+  transition: 0.2s all;
+}
 .adventure-card-image:hover {
-  filter: brightness(50%);
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+  cursor: pointer;
+  filter: brightness(40%);
 }
 
+.div_border {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 4px;
+}
 
-
+.adventure-card-text {
+  position: relative;
+  border: 1px solid #eee;
+  padding: 7px;
+  border-radius: 4px;
+}
 
 .experience-content ul li {
-  margin-left: 16px;
+  margin-left: -10px;
   padding: 0;
 }
 
-
-.adventure-detail-card {
-  border: 1px solid #eee;
-  border-radius: 4px;
-  padding: 16px;
+li_style li {
+  list-style-position: inside;
 }
 
-@media only screen and (min-width: 992px) {
+hr {
+  border-bottom: 1px solid #eee;
+}
+
+hr {
+  border: none;
+}
+
+@media only screen and (min-width: 1366px) {
+  /* For desktops phones: */
   #reservation {
-    width: 300px;
-    position: sticky;
+    width: 400px;
+    position: fixed;
   }
-.adventure-detail{
+
+  @media (max-width: 667px) {
+    #adventures {
+      height: 250px;
+    }
+    .experience-content ul li {
+      overflow: scroll;
+    }
+  }
 }
-
-}
-
-
