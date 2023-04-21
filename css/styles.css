@@ -91,7 +91,7 @@ border-radius: 8px;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/js19920722-ME_QTRIPSTATIC/assets/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
   height: 50vh;
   width: 100vw;
   background-size: cover;
